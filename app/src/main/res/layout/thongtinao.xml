@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TienAnh_Activity.TrangChuActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="412dp"
+            android:layout_height="77dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtHome"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="40dp"
+                android:text="Home"
+                android:textColor="#4E4848"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="33dp"
+                app:srcCompat="@drawable/home" />
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:paddingTop="40dp"
+                android:text="Category"
+                android:textColor="#4E4848"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgCategory"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="140dp"
+                app:srcCompat="@drawable/category" />
+
+            <TextView
+                android:id="@+id/txtCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="240dp"
+                android:paddingTop="40dp"
+                android:text="Cart"
+                android:textColor="#4E4848"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="240dp"
+                app:srcCompat="@drawable/cart" />
+
+            <TextView
+                android:id="@+id/txtProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:paddingTop="40dp"
+                android:text="Profile"
+                android:textColor="#4E4848"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="330dp"
+                app:srcCompat="@drawable/profile" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/imgvBack"
+            android:layout_width="42dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Back Icon"
+            android:padding="8dp"
+            android:src="@drawable/leftarrow"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.202" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_background"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+            <!-- Icon Tìm kiếm -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Search Icon"
+                android:padding="4dp"
+                android:src="@drawable/search" />
+
+            <!-- Ô nhập văn bản -->
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search"
+                android:inputType="text"
+                android:padding="4dp"
+                android:singleLine="true" />
+
+            <!-- Icon máy ảnh -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Camera Icon"
+                android:padding="4dp"
+                android:src="@drawable/camera" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="46dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="415dp"
+            android:layout_height="453dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imagvHoodie"
+                android:layout_width="367dp"
+                android:layout_height="212dp"
+                android:paddingLeft="0dp"
+                app:srcCompat="@drawable/hoodies" />
+
+            <TextView
+                android:id="@+id/txtHoodie"
+                android:layout_width="187dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="250dp"
+                android:text="Áo Hoodie Champion"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="270dp"
+                android:text="thông tin sản phẩm"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="292dp"
+                android:text="5.0" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="290dp"
+                app:srcCompat="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="318dp"
+                app:srcCompat="@drawable/place" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="321dp"
+                android:text="Hồ Chí Minh City" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="292dp"
+                android:text="24k lượt bán" />
+
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="380dp"
+                android:text="350.000"
+                android:textColor="#16B5FF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="400dp"
+                android:text="thêm vào giỏ hàng" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

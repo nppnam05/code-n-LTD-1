@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TienAnh_Activity.TopBannerActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_background"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+
+            <!-- Icon Tìm kiếm -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Search Icon"
+                android:padding="4dp"
+                android:src="@drawable/search" />
+
+            <!-- Ô nhập văn bản -->
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search"
+                android:inputType="text"
+                android:padding="4dp"
+                android:singleLine="true" />
+
+            <!-- Icon máy ảnh -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Camera Icon"
+                android:padding="4dp"
+                android:src="@drawable/camera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearArowBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0F0FF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearTopbanner">
+
+            <!-- Icon Quay lại -->
+            <ImageView
+                android:id="@+id/imgvBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Back Icon"
+                android:padding="1dp"
+                android:src="@drawable/leftarrow" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="🔥 Top Sản Phẩm Bán Chạy 🔥"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgvClothes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background"
+                app:srcCompat="@drawable/clothers" />
+
+            <ImageView
+                android:id="@+id/imgvShoes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/circle_background"
+                app:srcCompat="@drawable/shoes" />
+
+            <ImageView
+                android:id="@+id/imgvFoods"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background"
+                app:srcCompat="@drawable/foods" />
+
+            <ImageView
+                android:id="@+id/imgvAcces"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:srcCompat="@drawable/accessory" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvDanhSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="412dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="40dp"
+            android:text="Home"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            app:srcCompat="@drawable/home" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:paddingTop="40dp"
+            android:text="Category"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/category" />
+
+        <TextView
+            android:id="@+id/txtCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:paddingTop="40dp"
+            android:text="Cart"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCart"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:paddingTop="40dp"
+            android:text="Profile"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="23dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="330dp"
+            app:srcCompat="@drawable/profile" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

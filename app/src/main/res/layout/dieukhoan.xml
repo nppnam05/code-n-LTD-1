@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".DangNhapActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="Một số điều khoản và điều kiện"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="517dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="1. Tạo Tài Khoản: Người dùng phải cung cấp thông tin cá nhân chính xác và đồng ý duy trì tính chính xác của thông tin này. Họ cũng chịu trách nhiệm giữ tài khoản của mình an toàn và bảo mật.\n
+2. Sử Dụng Dịch Vụ: Dịch vụ của Cuccu không được sử dụng cho các hoạt động bất hợp pháp, và người dùng phải tuân thủ các luật và quy định địa phương khi sử dụng nền tảng.\n
+3. Hoa Hồng và Phí: Nếu người dùng tham gia vào chương trình bán hàng hoặc tiếp thị liên kết của Cuccu, họ cần biết về cấu trúc hoa hồng và phí liên quan, có thể khác nhau tùy thuộc vào sản phẩm và danh mục.\n
+4. Trách Nhiệm: Cuccu giới hạn trách nhiệm trong trường hợp xảy ra lỗi hoặc vấn đề liên quan đến dịch vụ hoặc sản phẩm được niêm yết trên nền tảng. Người dùng thừa nhận rằng họ sử dụng Cuccu trên cơ sở rủi ro của riêng mình.\n
+5. Thay Đổi Điều Khoản: Cuccu có quyền sửa đổi các điều khoản và điều kiện bất kỳ lúc nào, và người dùng nên thường xuyên kiểm tra để cập nhật. Việc tiếp tục sử dụng dịch vụ sẽ được coi là chấp nhận các thay đổi.\n
+6. Chấm Dứt: Cuccu có thể chấm dứt tài khoản hoặc quyền truy cập vào dịch vụ của mình nếu người dùng vi phạm các điều khoản và điều kiện.\n
+7. Thông Tin Bảo Mật: Người dùng phải xử lý thông tin bảo mật một cách có trách nhiệm và không tiết lộ mà không có sự cho phép hợp lệ."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

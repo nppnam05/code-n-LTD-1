@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HuyDonHang">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="135dp"
+        android:background="#05E8F0"
+        android:gravity="center"
+        android:text="Chờ xác nhận"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="77dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="40dp"
+            android:text="Home"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            app:srcCompat="@drawable/homeblackk" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:paddingTop="40dp"
+            android:text="Category"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/category" />
+
+        <TextView
+            android:id="@+id/txtCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:paddingTop="40dp"
+            android:text="Cart"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCart"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:paddingTop="40dp"
+            android:text="Profile"
+            android:textColor="#05E8F0"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="330dp"
+            app:srcCompat="@drawable/profileblue" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtDonChoXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:text="Đơn chờ xác nhận: 0"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

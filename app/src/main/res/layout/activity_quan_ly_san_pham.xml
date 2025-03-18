@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLySanPham">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="#05E8F0"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="Quản lý sản phẩm"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+    <EditText
+        android:id="@+id/edtTimSanPham"
+        android:layout_width="216dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Tìm sản phẩm"
+        android:inputType="text"
+        android:paddingLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imgFind"
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTimSanPham"
+        app:srcCompat="@drawable/find" />
+
+    <ImageView
+        android:id="@+id/imgQR"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/edtTimSanPham"
+        app:layout_constraintTop_toTopOf="@+id/edtTimSanPham"
+        app:srcCompat="@drawable/qr" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:background="#FFFFFF"
+        android:text="Thêm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="40dp"
+            android:text="Home"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            app:srcCompat="@drawable/homeblackk" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:paddingTop="40dp"
+            android:text="Category"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/category" />
+
+        <TextView
+            android:id="@+id/txtCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:paddingTop="40dp"
+            android:text="Cart"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCart"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:paddingTop="40dp"
+            android:text="Profile"
+            android:textColor="#05E8F0"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="330dp"
+            app:srcCompat="@drawable/profileblue" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgRing"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ring"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imgThongKe"
+        android:layout_width="35dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thongke" />
+
+
+    <ListView
+        android:id="@+id/lvQuanLySanPham"
+        android:layout_width="357dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTimSanPham"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

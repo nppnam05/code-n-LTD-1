@@ -1,0 +1,420 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBD1EA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavBar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BBD1EA">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/btnReturn"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/icon_return"
+                    android:paddingHorizontal="10dp">
+                </ImageView>
+                <TextView
+                    android:id="@+id/tvwTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingVertical="10dp"
+                    android:text="Thống Kê"
+                    android:textSize="25dp"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/round_border"
+                android:layout_marginVertical="15dp"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cửa Hàng"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng doanh thu"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvTongDoanhThuCuaHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="11,456,789đ"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhTongDoanhThuCuaHang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm 10,4% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#F80303"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng lượng sản phẩm"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvTongSanPhamCuaHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="1,204"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhTongSanPhamCuaHang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm 3,2% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#F80303"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/round_border"
+                android:layout_marginVertical="15dp"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Khách Hàng"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lượt khách ghé thăm"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvLuotKhachCuaHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="2,401 lượt"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhLuotKhachCuaHang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm 5,7% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#F80303"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lượt khách mới"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvKhachMoi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="1,601 lượt"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhKhachMoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm 5,7% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#F80303"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tỉ lệ mua hàng"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvTiLeMuaHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="46,6%"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhTiLeMuaHang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tăng 2,7% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#04EE1F"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tỉ lệ phản hồi"
+                            android:gravity="left"
+                            android:paddingStart="10dp"
+                            android:textSize="20dp"
+                            android:paddingVertical="7dp"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvTiLePhanHoi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingVertical="7dp"
+                            android:text="96,9%"
+                            android:paddingEnd="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1">
+                        </TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSoSanhTiLePhanHoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tăng 0,7% so với tháng trước"
+                        android:gravity="left"
+                        android:textColor="#04EE1F"
+                        android:paddingStart="10dp"
+                        android:textSize="12dp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btnCuaHang"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_store"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cửa Hàng"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnSanPham"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_product"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sản Phẩm"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnTaiKhoan"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_personal"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài Khoản"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

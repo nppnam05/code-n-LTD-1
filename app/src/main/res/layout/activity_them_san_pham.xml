@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemSanPham">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="135dp"
+        android:textSize="30dp"
+        android:background="#05E8F0"
+        android:gravity="center"
+        android:text="Thêm sản phẩm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="77dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="40dp"
+            android:text="Home"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            app:srcCompat="@drawable/homeblackk" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:paddingTop="40dp"
+            android:text="Category"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/category" />
+
+        <TextView
+            android:id="@+id/txtCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:paddingTop="40dp"
+            android:text="Cart"
+            android:textColor="#4E4848"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgCart"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:paddingTop="40dp"
+            android:text="Profile"
+            android:textColor="#05E8F0"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="330dp"
+            app:srcCompat="@drawable/profileblue" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="164dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="?attr/popupMenuBackground" />
+
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Tên:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnh" />
+
+    <TextView
+        android:id="@+id/txtGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        android:text="Giá:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnh" />
+
+    <TextView
+        android:id="@+id/txtMoTa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="120dp"
+        android:text="Mô tả:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnh" />
+
+    <TextView
+        android:id="@+id/txtPhanLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="216dp"
+        android:text="Phân loại:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnh" />
+
+    <Button
+        android:id="@+id/btnLuuSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="460dp"
+        android:text="Lưu sản phẩm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập tên sản phẩm"
+        android:inputType="text"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTen"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnh" />
+
+    <EditText
+        android:id="@+id/edtGia"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nhập giá"
+        android:inputType="text"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTen"
+        app:layout_constraintTop_toBottomOf="@+id/edtTen" />
+
+    <EditText
+        android:id="@+id/edtMoTa"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nhập mô tả"
+        android:inputType="text"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTen"
+        app:layout_constraintTop_toBottomOf="@+id/edtGia" />
+
+    <Spinner
+        android:id="@+id/spPhanLoai"
+        android:layout_width="181dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toEndOf="@+id/txtPhanLoai"
+        app:layout_constraintTop_toBottomOf="@+id/edtMoTa" />
+
+    <Spinner
+        android:id="@+id/spnAnh"
+        android:layout_width="71dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintStart_toEndOf="@+id/imgAnh"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvTonKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="Tồn Kho"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMoTa" />
+
+    <EditText
+        android:id="@+id/edtTonKho"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nhập số lượng"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/tvTonKho"
+        app:layout_constraintTop_toBottomOf="@+id/edtMoTa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

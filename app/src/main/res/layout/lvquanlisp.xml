@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="361dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
+        android:background="#9AF0F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Áo thun nam"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:text="100.000đ"
+            android:textColor="#FB0000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imgAnhSP"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/aocuatinh" />
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="70dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:text="Sửa"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="70dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:text="Xóa"
+            android:textSize="12dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
